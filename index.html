@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sete de Setembro</title>
+    <title>Sete de Setembro</title><link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="http://cdn.jselivr.net/npm/swiper/swiper-bundle.min.css">
     <script src="teste.js"></script>
@@ -83,98 +86,62 @@
 <button type="button" onclick="document.getElementById('txt01').style.display='block'">Saiba mais</button>
 <button type="button" onclick="document.getElementById('txt01').style.display='none'">Ocultar</button>
 
-        <div class="desfileDeBlindados">
-        <img src="/img/desfile de blindados.jpg" width="1000" height="600">
-        <p>Desfile de veículo blindado</p>
-      </div>
-
-      <div class="desfileMotorizados">
-        <img src="/img/desfile motorizado.webp" width="1000"height="600">
-        <p>Desfile motorizado de veículos militares do Exército</p>
-       </div>
-
-      <div class="infantaria">
-       <img src="/img/infantaria.jpg"  width="1000"height="600">
-       <p>Desife de soldados do Exercito Brasileiro grupo de Infantaria " Selva"</p>
-       </div>
-
-             <div class="trpa-a-pé">
-        <img src="/img/tropa a pe.jpg"  width="1000"height="600">
-        <p>Desfile de Oficiais Militares do Exército Brasileiro</p>
-         </div>
-
-         <div class="desfileFeminino">
-       <img src="/img/desfile feminino.jpg"  width="1000"height="600">
-       <p>Desfile de grupo feminino da Marinha do Brasil</p>
-         </div>
-
-         <div class="GuardaMunicipal">
-        <img src="/img/guarda municipal.jpg" width="1000" height="600"> 
-        <p>Desfille da Guarda Municipal de Curitiba</p>   
-         </div>
-
-       <div class="desfileEmCuritiba">
-        <img src="/img/desfile em curitiba.jpg" widf="1000" height="665">
-        <p>Desfile da banda da Escola Militar de Curitiba</p>
-       </div>
-
-      <div class="estudantes">
-      <img src="/img/desfile de estudantes.jpg"  width="1000"height="600">
-      <p>Desfile de estudantes da rede Municipal de ensino do Estado do Pernambuco</p>
-        </div>
 
 
-        <div class="swiper myswiper">
-
-          <div class="swiper-wrapper">
-
-            </div>
-            <div class="swiper-slide">
-              <img src="desfile e estudante.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="desfile e estudante.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="desfile e estudante.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="desfile e estudante.jpg" alt="">
-            </div>
-        </div>
-
-        <div class="swiper-pagination"></div>
-
-
-        </div>
+     <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="/javascript/img/desfile de blindados.jpg"  width="400" height="200" alt=""></div>
+    <div class="swiper-slide"><img src="/javascript/img/desfile de estudantes.jpg"  width="400" height="200" alt=""></div>
+    <div class="swiper-slide"><img src="javascript/img/desfile em curitiba.jpg"  width="400" height="200" alt=""></div>
+    ...
+  </div>
 
 
 
-<!-- Swiper JS -->
-<script src="https://cdn.jselivr.net/npm/swiper/swiper-bundl.min.js"></script>
+<div id=""></div>
 
 
 
-     <script>
-
-      const swiper = new swiper(".myswiper", {
-        effect: "cube",
-        grabCursor: true,
-        cubeEffect: {
-          shadow: true,
-          slideShadow: true,
-          shadowOfet: 20,
-          hadowScale: 0.94,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        }
 
 
-      });
 
-     </script>
 
+
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});</script>
 
 
 
